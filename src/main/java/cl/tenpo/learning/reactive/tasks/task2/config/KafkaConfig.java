@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.Map;
 
 @Configuration
-@Profile("!test")
+//@Profile("!test")
 public class KafkaConfig {
     private static final String RETRY_EXHAUSTED_TOPIC = "CR_RETRY_EXHAUSTED";
 

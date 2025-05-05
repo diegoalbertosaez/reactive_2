@@ -9,7 +9,6 @@ import reactor.core.Disposable;
 
 @Slf4j
 @Service
-
 public class KafkaConsumerService {
     private final ReactiveKafkaConsumerTemplate<String, ErrorEvent> errorConsumerTemplate;
     private Disposable consumerDisposable;

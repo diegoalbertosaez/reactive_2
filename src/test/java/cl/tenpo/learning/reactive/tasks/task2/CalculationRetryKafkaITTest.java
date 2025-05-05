@@ -17,6 +17,7 @@ import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.kafka.core.reactive.ReactiveKafkaConsumerTemplate;
 import org.springframework.kafka.test.context.EmbeddedKafka;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
@@ -35,6 +36,7 @@ import java.time.Duration;
 @Import(TestConfig.class)
 @Slf4j
 @EmbeddedKafka(partitions = 1, topics = {"CR_RETRY_EXHAUSTED"})
+@DirtiesContext
 public class CalculationRetryKafkaITTest {
 
     @Autowired
