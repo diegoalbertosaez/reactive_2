@@ -11,7 +11,7 @@ MONGO_PASS: mongodb
 MONGO_HOST: 127.0.0.1:27017
 MONGO_DB_NAME: learning_reactive_mongo
 
-REDIS_HOST: localhost
+REDIS_HOST: pepeiti
 REDIS_PORT: 6379
 
 KAFKA_HOST: localhost:9092

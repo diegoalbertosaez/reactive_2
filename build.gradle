@@ -44,6 +44,11 @@ dependencies {
     compileOnly (group: 'org.projectlombok', name: 'lombok')
     annotationProcessor (group: 'org.projectlombok', name: 'lombok')
 
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
+
+
     testImplementation (group: 'org.springframework.boot', name:'spring-boot-starter-test')
     testImplementation (group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.mongo', version: "$embeddedMongo")
     testImplementation (group: 'com.github.codemonstur', name: 'embedded-redis', version: "$embeddedRedis")

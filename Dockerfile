@@ -6,7 +6,7 @@ COPY build.gradle settings.gradle gradle.properties /app/
 COPY src /app/src
 
 RUN mkdir /build
-RUN gradle build --no-daemon
+RUN gradle build -Pspring.profiles.active=default --no-daemon
 
 FROM openjdk:21-jdk
 
